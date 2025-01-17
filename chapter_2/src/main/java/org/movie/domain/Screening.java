@@ -1,5 +1,6 @@
 package org.movie.domain;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Screening {
@@ -13,7 +14,7 @@ public class Screening {
         this.whenScreened = whenScreened;
     }
 
-    public LocalDateTime getWhenScreened() {
+    public LocalDateTime getStartTime() {
         return whenScreened;
     }
 

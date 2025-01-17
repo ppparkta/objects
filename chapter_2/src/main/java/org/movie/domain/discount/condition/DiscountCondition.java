@@ -1,4 +1,4 @@
-package org.movie.domain.discount;
+package org.movie.domain.discount.condition;
 
 import org.movie.domain.Screening;
 

@@ -1,7 +1,7 @@
 package org.movie.domain;
 
 import java.time.Duration;
-import org.movie.domain.discount.DiscountPolicy;
+import org.movie.domain.discount.policy.DiscountPolicy;
 
 public class Movie {
     private String title;

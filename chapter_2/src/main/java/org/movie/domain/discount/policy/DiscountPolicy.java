@@ -1,10 +1,11 @@
-package org.movie.domain.discount;
+package org.movie.domain.discount.policy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.movie.domain.Money;
 import org.movie.domain.Screening;
+import org.movie.domain.discount.condition.DiscountCondition;
 
 public abstract class DiscountPolicy {
     private List<DiscountCondition> conditions = new ArrayList<>();
