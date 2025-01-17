@@ -27,8 +27,8 @@ public class Money {
         return new Money(this.amount.subtract(amount.amount));
     }
 
-    public Money times(Money amount) {
-        return new Money(this.amount.multiply(amount.amount));
+    public Money times(double count) {
+        return new Money(this.amount.multiply(BigDecimal.valueOf(count)));
     }
 
     public boolean isLessThan(Money other) {
