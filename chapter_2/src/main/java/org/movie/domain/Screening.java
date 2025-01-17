@@ -1,4 +1,4 @@
-package org.movie;
+package org.movie.domain;
 
 import java.time.LocalDateTime;
 
@@ -23,5 +23,13 @@ public class Screening {
 
     public Money getMovieFee() {
         return movie.getFee();
+    }
+
+    public Money calculateFee(int audienceCount) {
+        return movie.calculateMovieFee(this).times(audienceCount);
+    }
+
+    public Reservation reserve(Customer customer, int audienceCount) {
+        return new Reservation(customer, this, calculateFee(audienceCount), audienceCount);
     }
 }

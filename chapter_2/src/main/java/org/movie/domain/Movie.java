@@ -1,4 +1,4 @@
-package org.movie;
+package org.movie.domain;
 
 public class Movie {
     private Money fee;
@@ -6,4 +6,5 @@ public class Movie {
     public Money getFee() {
         return fee;
     }
+
 }

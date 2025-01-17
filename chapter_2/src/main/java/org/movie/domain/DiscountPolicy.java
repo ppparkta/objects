@@ -1,4 +1,4 @@
-package org.movie;
+package org.movie.domain;
 
 public class DiscountPolicy {
 }
