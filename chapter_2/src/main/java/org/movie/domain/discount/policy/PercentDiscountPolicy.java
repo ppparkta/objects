@@ -4,7 +4,7 @@ import org.movie.domain.Money;
 import org.movie.domain.Screening;
 import org.movie.domain.discount.condition.DiscountCondition;
 
-public class PercentDiscountPolicy extends DefaultDiscountPolicy {
+public class PercentDiscountPolicy extends DiscountPolicy {
     private double percent;
 
     public PercentDiscountPolicy(double percent, DiscountCondition... conditions) {
