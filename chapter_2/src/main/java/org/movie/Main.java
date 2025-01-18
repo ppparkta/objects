@@ -8,6 +8,7 @@ import org.movie.domain.Movie;
 import org.movie.domain.discount.condition.PeriodCondition;
 import org.movie.domain.discount.condition.SequenceCondition;
 import org.movie.domain.discount.policy.AmountDiscountPolicy;
+import org.movie.domain.discount.policy.NoneDiscountPolicy;
 import org.movie.domain.discount.policy.PercentDiscountPolicy;
 
 public class Main {
@@ -30,5 +31,10 @@ public class Main {
                         new SequenceCondition(2),
                         new PeriodCondition(DayOfWeek.THURSDAY, LocalTime.of(10, 0), LocalTime.of(13, 59)
                         )));
+
+        Movie starWars = new Movie("스타워즈",
+                Duration.ofHours(2),
+                Money.wons(500),
+                new NoneDiscountPolicy());
     }
 }
