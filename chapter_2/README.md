@@ -98,8 +98,7 @@ Screening의 책임은 영화를 예매하는 것, Movie의 책임은 영화표 
 
 처음부터 객체를 식별하지 않고 예매하라는 메시지를 먼저 남긴다. 그 다음에 적절한 객체를 찾아서 책임을 할당한다.
 
-![](https://velog.velcdn.com/images/ppparkta/post/f1ae0bdc-68c4-4aff-a0ce-ed042586cdfe/image.png)
-
+![](https://velog.velcdn.com/images/ppparkta/post/62ccf964-51c6-4610-9819-0016958e4386/image.png)
 
 마찬가지로 가격을 계산하는 경우에도 가격을 계산하라는 메시지를 먼저 남기고 그 뒤에 적절한 객체인 Movie를 찾아서 책임을 할당한다.
 
