@@ -1,6 +1,6 @@
 package org.example.domain.discount.condition;
 
-import org.movie.domain.Screening;
+import org.example.domain.Screening;
 
 public class SequenceCondition implements DiscountCondition {
     private int sequence;
