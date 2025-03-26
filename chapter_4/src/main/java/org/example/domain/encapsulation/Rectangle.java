@@ -1,4 +1,4 @@
-package org.example.domain;
+package org.example.domain.encapsulation;
 
 public class Rectangle {
     private int left;
@@ -43,5 +43,10 @@ public class Rectangle {
 
     public void setBottom(int bottom) {
         this.bottom = bottom;
+    }
+
+    public void enlarge(int multiple) {
+        right *= multiple;
+        bottom *= multiple;
     }
 }
