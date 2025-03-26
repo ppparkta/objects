@@ -2,6 +2,7 @@ package org.example.domain;
 
 import java.time.Duration;
 import java.util.List;
+import org.example.domain.discount.condition.DiscountCondition;
 
 public class Movie {
     private String title;
