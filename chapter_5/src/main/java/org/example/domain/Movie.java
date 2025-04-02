@@ -2,13 +2,15 @@ package org.example.domain;
 
 import java.time.Duration;
 import java.util.List;
-import org.example.domain.discount.condition.DiscountCondition;
+import org.example.domain.discount.condition.PeriodCondition;
+import org.example.domain.discount.condition.SequenceCondition;
 
 public class Movie {
     private String title;
     private Duration runningTime;
     private Money fee;
-    private List<DiscountCondition> discountConditions;
+    private List<SequenceCondition> sequenceConditions;
+    private List<PeriodCondition> periodConditions;
 
     private MovieType movieType;
     private Money discountAmount;
