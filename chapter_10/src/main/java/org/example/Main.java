@@ -1,7 +1,18 @@
 package org.example;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Phone phone = new Phone(Money.wons(5), Duration.ofSeconds(10));
+        phone.call(new Call(LocalDateTime.of(2025, 1, 1, 12, 10, 0),
+                LocalDateTime.of(2025, 1, 1, 12, 11, 0)
+        ));
+        phone.call(new Call(
+                LocalDateTime.of(2025, 1, 2, 12, 10, 0),
+                LocalDateTime.of(2025, 1, 2, 12, 11, 0)
+        ));
+        phone.calculateFee();
     }
 }
