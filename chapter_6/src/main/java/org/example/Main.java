@@ -20,9 +20,8 @@ public class Main {
                 LocalDateTime.of(2025, 4, 25, 10, 30, 0),
                 Duration.ofMinutes(30));
 
-        assert meeting2.isSatisfied(schedule) == false;
-        assert meeting2.isSatisfied(schedule) == true;
-
-
+        if (!meeting2.isSatisfied(schedule)) {
+            meeting2.reschedule(schedule);
+        }
     }
 }
