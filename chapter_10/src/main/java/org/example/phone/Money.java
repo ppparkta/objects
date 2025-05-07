@@ -1,4 +1,4 @@
-package org.example;
+package org.example.phone;
 
 import java.math.BigDecimal;
 

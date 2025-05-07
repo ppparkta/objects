@@ -1,15 +1,19 @@
-package org.example;
+package org.example.phone;
 
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Phone {
+
+    private double taxRate;
+
     private Money amount;
     private Duration seconds;
     private List<Call> calls = new ArrayList<>();
 
-    public Phone(Money amount, Duration seconds) {
+    public Phone(double taxRate, Money amount, Duration seconds) {
+        this.taxRate = taxRate;
         this.amount = amount;
         this.seconds = seconds;
     }
@@ -36,6 +40,6 @@ public class Phone {
         for (Call call : calls) {
             result = result.plus(amount.times(call.getDuration().getSeconds() / seconds.getSeconds()));
         }
-        return result;
+        return result.plus(result.times(taxRate));
     }
 }
